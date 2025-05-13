@@ -1,0 +1,57 @@
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-image: url(../icons/icon-burger-menu.png);
+  background-size: cover;
+
+  @include on-tablet {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--login {
+    display: flex;
+    background-image: url(../icons/icon-login.png);
+
+    &--wrap {
+      font-size: 14px;
+      line-height: 14px;
+      align-items: center;
+    }
+  }
+
+  &--product {
+    display: flex;
+    background-image: url(../icons/icon_buy.png);
+    height: 20px;
+    width: 20px;
+
+    @include on-tablet {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &--wallet {
+    background-image: url(../icons/icon-wallet.png);
+
+    &--wrap {
+      font-size: 14px;
+      line-height: 14px;
+      align-items: center;
+    }
+  }
+
+  &--menu {
+    background-image: url(../icons/icon-burger-menu.png);
+    &:hover {
+      background-image: url(../icons/icon-burger-menu-hover.png);
+      transition: all 0.3s;
+    }
+  }
+
+  &--close {
+    background-image: url(../icons/icon-close.png);
+  }
+}
