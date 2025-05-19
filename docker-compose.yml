@@ -1,0 +1,31 @@
+services:
+  diplom-db:
+    image: mysql:latest
+    ports:
+      - "3232:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: diplom-root-password
+      MYSQL_DATABASE: default
+      MYSQL_USER: diplomuser
+      MYSQL_PASSWORD: diplompassword
+    container_name: diplom-database
+  phpmyadmin:
+    image: phpmyadmin:latest
+    environment:
+      PMA_HOST: diplom-db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 0
+    ports:
+      - "8070:80"
+  backend:
+    build: ./ad-backend
+    restart: on-failure:10
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://diplom-db:3306/default
+      - SPRING_DATASOURCE_USERNAME=diplomuser
+      - SPRING_DATASOURCE_PASSWORD=diplompassword
+    ports:
+     - "7070:7070"
+    depends_on:
+     - diplom-db
+    container_name: backend

@@ -1,0 +1,11 @@
+me\pe4en1e\adbackend\web\endpoint\GetAllProductsEndpoint.class
+me\pe4en1e\adbackend\data\entity\Product.class
+me\pe4en1e\adbackend\data\ProductCategory.class
+me\pe4en1e\adbackend\web\endpoint\RootEndpoint$Schema.class
+me\pe4en1e\adbackend\web\endpoint\RootEndpoint$Schema$SchemaBuilder.class
+me\pe4en1e\adbackend\data\entity\Product$ProductBuilder.class
+me\pe4en1e\adbackend\web\endpoint\RootEndpoint.class
+me\pe4en1e\adbackend\AdBackendApplication.class
+me\pe4en1e\adbackend\data\repository\ProductRepository.class
+me\pe4en1e\adbackend\web\endpoint\AddProductEndpoint.class
+me\pe4en1e\adbackend\web\endpoint\GetProductsByCategoryEndpoint.class

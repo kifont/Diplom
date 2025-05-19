@@ -1,0 +1,27 @@
+.top-bar {
+  padding-block: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__content {
+    // background-color: #0e97d6;
+    background-color: white;
+
+  }
+
+  @include on-tablet {
+    padding-block: 12px;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__logo img{
+    display: flex;
+    width: 47%;
+    height: auto;
+  }
+}

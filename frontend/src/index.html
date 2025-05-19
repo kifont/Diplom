@@ -1,0 +1,568 @@
+<!-- #region head -->
+<!doctype html>
+<html
+  lang="en"
+  class="page"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>LikiGo</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/style.scss"
+    />
+    <link
+      rel="icon"
+      href="./icons/logo_icon.png"
+      type="image/png"
+    />
+    <script
+      src="scripts/main.js"
+      defer
+    ></script>
+  </head>
+  <!-- #endregion -->
+  <body class="page__body">
+    <header class="header">
+      <div class="header__content">
+        <div class="top-bar__content">
+          <div class="container">
+            <div class="top-bar">
+              <a
+                href="#"
+                class="top-bar__logo"
+              >
+                <img
+                  src="icons/logo_test.png"
+                  alt="Bang & Olufsen logo"
+                />
+              </a>
+              <div class="top-bar__icons">
+                <div class="icon--login--wrap">
+                  <a
+                    href="#"
+                    class="icon icon--login"
+                  ></a>
+                  Вхід
+                </div>
+                <div class="icon--wallet--wrap">
+                  <a
+                    href="Кошик"
+                    class="icon icon--wallet"
+                  ></a>
+                  Кошик
+                </div>
+                <a
+                  href="#menu"
+                  class="icon icon--menu"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="header__section">
+      <div class="container">
+        <div class="header__section--text">
+          Піклуйся про своє здоров'я,
+          <br />
+          замовляй ліки без черг!
+        </div>
+      </div>
+    </section>
+
+    <aside
+      class="page__menu menu"
+      id="menu"
+    >
+      <div class="container">
+        <div class="top-bar menu__top">
+          <a
+            href="#"
+            class="top-bar__logo"
+          >
+            <img
+              src="icons/logo_test.png"
+              alt="Bang & Olufsen logo"
+            />
+          </a>
+          <a
+            href="#"
+            class="icon icon--close"
+          ></a>
+        </div>
+        <div class="menu__bottom">
+          <nav class="nav menu__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#recommended"
+                >
+                  Часто шукають
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#categories"
+                >
+                  Категорії
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#about-us"
+                >
+                  Про нас
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#contact-us"
+                >
+                  Підтримка
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a
+            href="tel:+1 234 5555-55-55"
+            class="menu__phone-number"
+          >
+            +1 234 5555-55-55
+          </a>
+          <a
+            href="tel:+1 234 5555-55-55"
+            class="menu__call-to-order"
+          >
+            Замовити
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="container">
+        <div class="main__content">
+          <section
+            class="recommended"
+            id="recommended"
+          >
+            <h2 class="section-title">Часто шукають</h2>
+            <div
+              class="recommended__products"
+              id="recommended_products"
+            ></div>
+          </section>
+
+          <section
+            class="recommended"
+            id="categoryProduct"
+          >
+            <h2
+              class="section-title section-title--category"
+              id="category__title"
+            >
+              Товар категорії
+            </h2>
+            <div
+              class="recommended__products"
+              id="category_products"
+            >
+              <!-- <article class="product recommended__product">
+                <img
+                  src="images/products/spashmalgon.png"
+                  alt="BEOSOUND A5"
+                  class="product__photo"
+                />
+                <h3 class="product__title">BEOSOUND A5</h3>
+                <p class="product__desc">
+                  Huge sound anywhere - in the home or outdoors. Beosound A5 is
+                  a Wi-Fi and Bluetooth speaker with long-lasting battery and
+                  wireless charging built in.
+                </p>
+                <div class="product__info">
+                  <p class="product__price">$ 1299.00</p>
+                  <div class="product__icon">
+                    <a
+                      href="#"
+                      id="productBuy"
+                      class="icon icon&#45;&#45;product"
+                    ></a>
+                  </div>
+                </div>
+              </article> -->
+            </div>
+          </section>
+
+          <section
+            class="categories"
+            id="categories"
+          >
+            <h2 class="section-title">Категорії</h2>
+
+            <div class="categories__wrapper">
+              <article
+                class="category"
+                id="medicine"
+              >
+                <div class="category__photos">
+                  <a
+                    href="#categoryProduct"
+                    class="category__link category__link--mini"
+                  >
+                    <img
+                      class="category__photo"
+                      src="images/categories/Portable speakers_mini.png"
+                      alt="Portable speakers-mini"
+                    />
+                  </a>
+
+                  <a
+                    href="#categoryProduct"
+                    class="category__link category__link--big"
+                  >
+                    <img
+                      class="category__photo"
+                      src="images/categories/Portable speakers_big.png"
+                      alt="Portable speakers-big"
+                    />
+                  </a>
+                </div>
+                <h3 class="category__title">Ліки та профілактичні засоби</h3>
+              </article>
+
+              <article
+                class="category"
+                id="vitamins"
+              >
+                <div class="category__photos">
+                  <a
+                    href="#categoryProduct"
+                    class="category__link category__link--Earphones"
+                  >
+                    <img
+                      class="category__photo"
+                      src="images/categories/Earphones_first.png"
+                      alt="Earphones-first"
+                    />
+                  </a>
+
+                  <a
+                    href="#categoryProduct"
+                    class="category__link category__link--Earphones"
+                  >
+                    <img
+                      class="category__photo"
+                      src="images/categories/Earphones_second.png"
+                      alt="Earphones-second"
+                    />
+                  </a>
+                </div>
+
+                <h3 class="category__title">Вітаміни та мінерали</h3>
+              </article>
+
+              <article
+                class="category"
+                id="sport_and_health"
+              >
+                <div class="category__photos">
+                  <a
+                    href="#categoryProduct"
+                    class="category__link category__link--smart"
+                  >
+                    <img
+                      class="category__photo"
+                      src="images/categories/Smart Home_first.png"
+                      alt="Smart Home"
+                    />
+                  </a>
+
+                  <a
+                    href="#categoryProduct"
+                    class="category__link category__link--smart"
+                  >
+                    <img
+                      class="category__photo"
+                      src="images/categories/Smart Home_second.png"
+                      alt="Smart Home"
+                    />
+                  </a>
+                </div>
+
+                <h3 class="category__title">Краса та догляд</h3>
+              </article>
+              <article class="category">
+                <div
+                  class="category__button button"
+                  id="show_all"
+                >
+                  <a
+                    class="category__button--link"
+                    href="#recommended"
+                  >
+                    Дивитись все
+                  </a>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+      <section class="slide">
+        <div class="slide__photo"></div>
+      </section>
+      <div class="about-us--color">
+        <div class="container">
+          <div class="main__content">
+            <section
+              class="about-us"
+              id="about-us"
+            >
+              <h2 class="section-title about-us__title">
+                Цифровізація контролю цін на лікарські засоби
+              </h2>
+              <div class="about-us__content">
+                <p class="about-us__desc">
+                  Використання сучасних веб-технологій у фармацевтиці забезпечує
+                  ефективний моніторинг цін на лікарські засоби. Це сприяє
+                  прозорості ринку, покращує доступність медикаментів для
+                  споживачів і оптимізує роботу аптечних мереж шляхом
+                  автоматизованого збору та аналізу даних.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main__content">
+          <section
+            class="contact-us"
+            id="contact-us"
+          >
+            <h2 class="section-title contact-us__title">Зв'язатися з нами</h2>
+            <div class="contact-us-form">
+              <form
+                id="contactForm"
+                action="#"
+                method="post"
+              >
+                <label
+                  for="name"
+                  class="contact-us-form__label"
+                ></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="contact-us-form__input"
+                  placeholder="І'мя"
+                  required
+                />
+
+                <label
+                  for="email"
+                  class="contact-us-form__label"
+                ></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="contact-us-form__input"
+                  placeholder="Почта"
+                  required
+                />
+
+                <label
+                  for="message"
+                  class="contact-us-form__label"
+                ></label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="contact-us-form__textarea"
+                  placeholder="Повідомлення"
+                  required
+                ></textarea>
+
+                <div class="contact-us-form__button">
+                  <button
+                    type="submit"
+                    class="contact-us-form__button--link"
+                  >
+                    Відправити
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="contact-us-content">
+              <div class="contact-us-content__info">
+                <p class="contact-us-content__sub-title">Телефон</p>
+                <a
+                  href="tel:+1 234 5555-55-55"
+                  class="contact-us-content__desc"
+                >
+                  +1 234 5555-55-55
+                </a>
+              </div>
+
+              <div class="contact-us-content__info">
+                <p class="contact-us-content__sub-title">Почта</p>
+                <a
+                  href="mailto:example@email.com"
+                  class="contact-us-content__desc"
+                >
+                  hello@nothing.com
+                </a>
+              </div>
+
+              <div class="contact-us-content__info">
+                <p class="contact-us-content__sub-title">Адреса</p>
+                <a
+                  href="https://maps.app.goo.gl/dDUV1RQoEpQEKYxh6"
+                  target="_blank"
+                  class="contact-us-content__desc"
+                >
+                  вулиця Василя Липківського, 3
+                  <br />
+                  Київ, 03035
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <div
+      id="auth-container"
+      class="auth-container"
+    >
+      <!-- Вкладка для входу -->
+      <a
+        href="#"
+        class="auth-tab--close"
+        id="auth-close"
+        aria-label="Закрити форму"
+      ></a>
+      <div
+        class="auth-tab auth-tab--login"
+        id="login-tab"
+      >
+        <h2 class="auth-tab__title">Вхід</h2>
+        <form
+          class="auth-tab__form"
+          id="login-form"
+        >
+          <input
+            class="auth-tab__input"
+            type="text"
+            placeholder="Ваше ім’я"
+            name="name"
+            required
+          />
+          <input
+            class="auth-tab__input"
+            type="email"
+            placeholder="Ваша електронна пошта"
+            required
+          />
+          <input
+            class="auth-tab__input"
+            type="password"
+            placeholder="Пароль"
+            required
+          />
+          <button
+            class="auth-tab__button"
+            type="submit"
+          >
+            Увійти
+          </button>
+        </form>
+        <p class="auth-tab__toggle-link">
+          Ще не маєте облікового запису?
+          <a
+            href="#"
+            id="register-link"
+            class="auth-tab__link"
+          >
+            Зареєструватися
+          </a>
+        </p>
+      </div>
+      <!-- Вкладка для реєстрації -->
+      <div
+        class="auth-tab auth-tab--register"
+        id="register-tab"
+      >
+        <h2 class="auth-tab__title">Реєстрація</h2>
+        <form
+          class="auth-tab__form"
+          id="register-form"
+        >
+          <input
+            class="auth-tab__input"
+            type="email"
+            placeholder="Ваша електронна пошта"
+            required
+          />
+          <input
+            class="auth-tab__input"
+            type="password"
+            placeholder="Пароль"
+            required
+          />
+          <button
+            class="auth-tab__button"
+            type="submit"
+          >
+            Зареєструватися
+          </button>
+        </form>
+        <p class="auth-tab__toggle-link">
+          Вже є обліковий запис?
+          <a
+            href="#"
+            id="login-link"
+            class="auth-tab__link"
+          >
+            Увійти
+          </a>
+        </p>
+      </div>
+    </div>
+    <div
+      class="addtobin"
+      id="addtobin"
+    >
+      <p class="addtobin__text">Додано до кошика!</p>
+    </div>
+
+    <footer class="footer"></footer>
+    <script src="scripts/recommended_products.js"></script>
+    <script src="scripts/products-category.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+E:\AntonDiplom\ad-backend\src\main\java\me\pe4en1e\adbackend\AdBackendApplication.java
+E:\AntonDiplom\ad-backend\src\main\java\me\pe4en1e\adbackend\data\entity\Product.java
+E:\AntonDiplom\ad-backend\src\main\java\me\pe4en1e\adbackend\data\ProductCategory.java
+E:\AntonDiplom\ad-backend\src\main\java\me\pe4en1e\adbackend\data\repository\ProductRepository.java
+E:\AntonDiplom\ad-backend\src\main\java\me\pe4en1e\adbackend\web\endpoint\AddProductEndpoint.java
+E:\AntonDiplom\ad-backend\src\main\java\me\pe4en1e\adbackend\web\endpoint\GetAllProductsEndpoint.java
+E:\AntonDiplom\ad-backend\src\main\java\me\pe4en1e\adbackend\web\endpoint\GetProductsByCategoryEndpoint.java
+E:\AntonDiplom\ad-backend\src\main\java\me\pe4en1e\adbackend\web\endpoint\RootEndpoint.java
